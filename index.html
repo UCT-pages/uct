@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home" class="section">
+        <h1>Bienvenido</h1>
+        <p>Elija una opción:</p>
+        <button class="option-btn" onclick="chooseOption('erp')">ERP</button>
+        <button class="option-btn" onclick="chooseOption('correo-campus')">CORREO Y CAMPUS VIRTUAL</button>
+    </div>
+
+    <div id="animation" class="section hidden">
+        <img id="rocket" src="rocket_student.png" alt="Estudiante en un cohete">
+    </div>
+
+    <div id="pageA" class="section hidden">
+        <h2>Página A - ERP</h2>
+        <p>Detalles sobre ERP...</p>
+        <button class="next-btn" onclick="scrollToNext('pageA')">Siguiente</button>
+    </div>
+
+    <div id="pageB" class="section hidden">
+        <h2>Página B - CORREO Y CAMPUS VIRTUAL</h2>
+        <p>Detalles sobre Correo y Campus Virtual...</p>
+        <button class="next-btn" onclick="scrollToNext('pageB')">Siguiente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
