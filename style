@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+#home {
+    background-color: #f5f5f5;
+}
+
+#animation {
+    background-color: #4CAF50;
+    text-align: center;
+}
+
+#rocket {
+    width: 100px;
+    position: relative;
+    animation: rocketMove 2s forwards;
+}
+
+@keyframes rocketMove {
+    0% { bottom: -100px; opacity: 0; }
+    50% { bottom: 50px; opacity: 1; }
+    100% { bottom: 200px; opacity: 0; }
+}
+
+.option-btn, .next-btn {
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.option-btn:hover, .next-btn:hover {
+    background-color: #005f7f;
+}
+
+#pageA, #pageB {
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 200vh; /* Para simular el scroll */
+}
